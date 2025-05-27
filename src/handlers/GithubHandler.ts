@@ -319,7 +319,12 @@ export default class GithubHandler {
       return false;
     }
     //create a path for the files to be uploaded
-    let basePath = `${question.questionFrontendId ?? question.questionId ?? 'unknown'}-${question.titleSlug}`;
+    let resolvedQuestionId = 'unknown';
+    if (question.questionId || question.questionFrontendId) {
+      resolvedQuestionId = question.questionFrontendId ?? question.questionId;
+      resolvedQuestionId = resolvedQuestionId.padStart(4, '0');
+    }
+    let basePath = `${resolvedQuestionId}-${question.titleSlug}`;
 
     if (this.github_leetsync_subdirectory) {
       basePath = `${this.github_leetsync_subdirectory}/${basePath}`;
