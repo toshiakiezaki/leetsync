@@ -43,7 +43,7 @@ To use LeetSync, follow these steps:
 
 ## Support
 
-If you encounter any issues or have any suggestions for improving LeetSync, please feel free to [open an issue](https://github.com/3ba2ii/leet-sync/issues) on the GitHub repository.
+If you encounter any issues or have any suggestions for improving LeetSync, please feel free to [open an issue](https://github.com/LeetSync/LeetSync/issues) on the GitHub repository.
 
 ## Contributing
 
